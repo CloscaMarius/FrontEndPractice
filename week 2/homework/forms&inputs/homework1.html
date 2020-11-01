@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formular</title>
+    </head>
+    <body>
+        <h2>Formular</h2>
+    <form>
+        <label for="nume">Nume:</label>
+        <input type="text" id="nume" required>
+        <br><br>
+        <label for="prenume">Prenume:</label>
+        <input type="text" id="prenume" required>
+        <br><br>
+        Sex:
+        <input type="radio" name="sex" id="masculin" value="masculin">
+        <label for="masculin">M</label>
+        <input type="radio" name="sex" id="feminin" value="feminin">
+        <label for="feminin">F</label>
+        <br><br>
+        <label for="varsta">Varsta:</label>
+        <input type="number" id="varsta" min="18" max="85" value="18">
+        <br><br>
+        <label for="tara">Tara:</label>
+        <input type="text" id="tara" value="Romania">
+        <br><br>
+        <label for="oras">Oras:</label>
+        <input type="text" id="oras" value="Iasi">
+        <br><br>
+        <label for="adresa">Adresa:</label>
+        <br>
+        <textarea id="adresa" rows="3" cols="40"></textarea>
+        <br><br>
+        <label for="codPostal">Cod postal:</label>
+        <input type="number" id="codPostal">
+        <br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required>
+        <br><br>
+        <label for="mesaj">Mesaj:</label>
+        <br>
+        <textarea id="mesaj" rows="5" cols="40" ></textarea>
+        <br><br>
+        <label for="atasareCV">Atasare CV:</label>
+        <br>
+        <input type="file" id="atasareCV">
+        <br><br>
+        <input type="submit" value="Trimite">
+        &nbsp;&nbsp;
+        <input type="reset" value="Reset">
+    </form>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search form</title>
+    </head>
+    <body>
+        <form>
+            <br><br>
+            <label for="search">Search for:</label>
+            <br>
+            <input type="search" id="search" value="chocolate cheesecake recipes" size="30">
+            <input type="submit" value="Search">
+            <br>
+            <label for="match">Match:</label>
+            <input type="radio" name="radio" id="match" value="anyWord">Any word
+            <input type="radio" name="radio" id="match" value="allWords" checked>All words
+            <input type="radio" name="radio" id="match" value="exactPhrase">Exact phrase
+            <br> &emsp;&emsp;&emsp;
+            <input type="checkbox" id="match" checked>Sound-alike matching
+            <br>
+            <label for="dated">Dated:</label>
+            <input type="radio" name="radio1" id="dated">
+            <select id="dated">
+                <option value="lastYear">Within the last year</option>
+                <option value="thisYear">This year</option>
+            </select>
+            <br>&emsp;&emsp;&emsp;
+            <input type="radio" name="radio1" id="dated" checked>
+            From: <input type="date" id="dated">
+            <br>&emsp;&emsp;&emsp;&emsp;&emsp;
+            To: <input type="date" id="dated">
+            <br>
+            <label for="within">Within:</label>
+            <select id="within">
+                <option value="description">Description</option>
+                <option value="name">Name</option>
+                <option value="both">Both</option>
+            </select>
+            <br>
+            <label for="show">Show:</label>
+            <input type="number" min="1" max="20" value="10">
+            results
+            <select>
+                <option value="with">with</option>
+                <option value="without">without</option>
+            </select>
+            summaries
+            <br>
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="relevance">relevance</option>
+                <option value="date">date</option>
+                <option value="name">name</option>
+            </select>
+            
+        </form>
+    </body>
+</html>

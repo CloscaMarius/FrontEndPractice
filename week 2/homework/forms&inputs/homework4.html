@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My feedback form</title>
+</head>
+
+<body>
+    <h2>My feedback form</h2>
+
+
+    <form>
+        <ul>
+            <li><label for="name">Name:</label>
+                <input type="text" id="name" required></li>
+            <br>
+            <li><label for="email">Email:</label>
+                <input type="email" id="email" required></li>
+            <br>
+            <li><label for="password">Password:</label>
+                <input type="password" id="password" required></li>
+            <br>
+            <li><label for="emotions">Please check all the emotions that apply to you:</label></li>
+                <ul>
+                    <li><input type="checkbox" id="emotions" value="angry" checked>Angry</li>
+                    <li><input type="checkbox" id="emotions" value="sad">Sad</li>
+                    <li><input type="checkbox" id="emotions" value="happy">Happy</li>
+                    <li><input type="checkbox" id="emotions" value="ambivalent">Ambivalent</li>
+                </ul>
+                <br>
+            <li><label for="satisfaction">How satisfied were you with our service?</label></li>
+                <ul>
+                    <li><input type="radio" name="radio" id="satisfaction" value="very_satisfied" checked>Very satisfied
+                    </li>
+                    <li><input type="radio" name="radio" id="satisfaction" value="satisfied">Satisfied</li>
+                    <li><input type="radio" name="radio" id="satisfaction" value="didnt_care">Didn't care</li>
+                    <li><input type="radio" name="radio" id="satisfaction" value="dissatisfied">Dissatisfied</li>
+                    <li><input type="radio" name="radio" id="satisfaction" value="very_dissatisfied">Very dissatisfied
+                    </li>
+                </ul>
+                <br>
+            <li><label for="comments">Further comments:</label><br>
+                <textarea name="comments" id="comments" cols="30" rows="4"></textarea></li>
+            <br>
+            <li><label for="photo">Bio photo:</label>
+                <input type="file" id="photo"></li>
+            <br>
+            <li><label for="location">Location visited:</label>
+                <select id="location">
+                    <option value="selectLocation">Select location</option>
+                    <option value="iasi">Iasi</option>
+                    <option value="bucuresti">Bucuresti</option>
+                    <option value="cluj">Cluj</option>
+                    <option value="brasov">Brasov</option>
+                </select></li>
+            <br>
+            <li><input type="submit"></li>
+        </ul>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div {
+              width: 400px;
+              border: 1px solid black;
+              padding: 40px;
+              margin: 10px;
+            }
+
+            p{float:left;
+	            padding:0 5px;
+	            margin:-9px 0 0 30px;
+	            background:white;}
+            </style>
+    </head>
+    <body>
+        <p>Pizza Order</p>
+        <div>
+        <form>
+            <label for="name">Your name:</label>
+            <input type="text" id="name" required minlength="3" maxlength="10">
+            <br><br>
+            <label for="email">Your email:</label>
+            <input type="email" id="email" required>
+            <br><br>
+            <label for="number">Quantity:</label>
+            <input type="number" id="number" min="1" max="7" value="1">
+            <br><br>
+            <label for="date">Delivery date: </label>
+            <input type="datetime-local" id="date" >
+            <br><br>
+            <label for="topping">Topping:</label>
+            <input type="radio" name="topping" id="topping" value="supreme">Supreme
+            <input type="radio" name="topping" id="topping" value="vegetarian" checked>Vegetarian
+            <input type="radio" name="topping" id="topping" value="hawaian">Hawaian
+            <br><br>
+            <label for="sauce">Sauce:</label>
+            <select id="sauce">
+                <option value="tomato">Tomato</option>
+                <option value="spicy" selected>Spicy</option>
+            </select>
+            <br><br>
+            <label for="extras">Extras:</label>
+            <input type="checkbox" id="extras" value="cheese">Cheese
+            <input type="checkbox" id="extras" value="onions">Onions 
+            <input type="checkbox" id="extras" value="olives" checked>Olives
+            <br><br>
+            <label for="instructions">Delivery instructions:</label>
+            <br>
+            <textarea id="instructions" placeholder="Please input your delivery instructions..." rows="10" cols="50" required></textarea>
+            <br>
+            <input type="submit" value="Send order">
+            <br><br>
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+    </body>
+</html>
