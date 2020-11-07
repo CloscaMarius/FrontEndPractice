@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercise css selectors</title>
+
+<style>
+    label{color: skyblue;}
+    input[type="text"] {border-color: green;}
+    input[type="date"] {background-color: blue;}
+    input[id*="e"] {color:red;}
+    input[type="submit"]{background-color: green;}
+    input[type="reset"]{background-color: green;}
+    body{background-color: salmon;}
+</style>
+
+  </head>
+  <body>
+    <h1>Tinder app - banking application</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" />
+      <br />
+      <br />
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname" />
+      <br />
+      <br />
+      <label for="city">City:</label>
+      <input type="text" id="city" />
+      <br />
+      <br />
+      <label for="dateOfBirth">Date of birth:</label>
+      <input type="date" id="dateOfBirth" />
+      <br />
+      <br />
+      <label for="photo">Your photo: </label>
+      <input type="file" id="photo" />
+      <br />
+      <br />
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>
