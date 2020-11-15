@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      body {
+        margin-bottom: 50px;
+      }
+
+      nav {
+        width: 125px;
+      }
+      #first {
+        position: absolute;
+        top: 0px;
+        margin-left: 125px;
+      }
+
+      footer{
+          position: fixed;
+          bottom: 0px;
+          left: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Taco Menu</li>
+        <li>Draft List</li>
+        <li>Hours</li>
+        <li>Directions</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <section id="first">
+      <p>
+        The "margin-left" style for sections makes sure there is room for the
+        "nav". Otherwise the absolute and static elements would overlap
+      </p>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+          inventore impedit quia quisquam quidem doloremque atque aut fugit.
+          Ducimus repudiandae dolorem dolores repellat magni harum adipisci in
+          culpa asperiores accusantium.
+        </p>
+        <section>
+          <p>
+            Notice what happens when you resize your browser. It works nicely!
+          </p>
+        </section>
+      </section>
+    </section>
+
+    <footer>
+      <p>
+        If you use a fixed header or footer, make sure there is room for it!
+        "margin-bottom" on the "body"
+      </p>
+    </footer>
+  </body>
+</html>

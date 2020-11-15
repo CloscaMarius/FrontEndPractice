@@ -1,0 +1,45 @@
+body{
+    background-color: #3194f7;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    margin: 0;
+}
+
+header{
+    height: 70px;
+    background-color: rgb(9, 122, 9);
+}
+
+footer{
+    height: 70px;
+    background-color: rgb(9, 122, 9);
+}
+
+main{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(9, 122, 9,0.3);
+}
+
+section{
+    width: 250px;
+    height: 250px;
+}
+
+.first{
+    background-image: url(https://avatarfiles.alphacoders.com/687/thumb-1920-68767.jpg);
+    background-size: 250px 250px;
+}
+
+.second{
+    background-image: url(https://www2.deloitte.com/content/dam/Deloitte/global/Images/promo_images/gx-public-sector-buenos-aires-p.jpg/_jcr_content/renditions/cq5dam.web.250.250.mobile.jpeg);
+    background-size: 250px 250px;
+}
+
+.third{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ6NANCoGHXtPSr_7pidFf7RtqJ36tsWZV5Ng&usqp=CAU);
+    background-size: 250px 250px;
+}

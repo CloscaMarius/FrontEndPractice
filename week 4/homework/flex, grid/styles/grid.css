@@ -1,0 +1,24 @@
+.grid-container{
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-gap: 10px;
+    background-color: black;
+}
+
+.a,.b,.c,.d,.e,.f,.g {
+    text-align: center;
+    background-color: white;
+}
+
+.c{
+    background-color: red;
+}
+
+.d{
+    background-color: rgb(66, 0, 255);
+}
+
+.g{
+    background-color: yellow;
+}

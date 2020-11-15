@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #9d00ff;
+    color: white;
+    padding: 50px;
+  }
+  
+  footer {
+    background-color: #ff9800;
+    color: white;
+    padding: 50px;
+  }
+  
+  main {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .padding25 {
+    padding: 25px;
+  }
+  
+  .leftSidebar {
+    color: white;
+    background-color: #3399ff;
+  }
+  
+  .rightSidebar {
+    color: white;
+    background-color: #00cf00;
+  }
+  
+  .fontStyle {
+    font-weight: bold;
+    font-size: 32px;
+  }
+  
+  .mainContent {
+    flex-grow: 1;
+  }
