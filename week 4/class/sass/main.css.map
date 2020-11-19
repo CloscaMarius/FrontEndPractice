@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "ACEA,AAAA,IAAI,CAAA;EACA,gBAAgB,EAHJ,IAAI;CAInB;;ACGD,AAPA,CAOC,CAPa;EAAC,KAAK,EAAC,IAAI;EACjB,OAAO,EAAC,KAAK;EACb,MAAM,EAAC,aAAa;CAEvB;;AAGL,AAAA,CAAC,CAAA;EAEG,UAAU,EAAE,KAAK;CACpB;;AEVD,AACI,GADD,CACC,CAAC,CAAA;EAAC,KAAK,EAAC,IAAI;EACR,OAAO,EAAC,KAAK;EACb,MAAM,EAAC,aAAa;CAEvB;;AHHL,AAAA,IAAI,CIFA;EACA,KAAK,EAAE,KAAoB;CAC9B",
+    "sources": [
+        "main.scss",
+        "_variable.scss",
+        "_inheritance.scss",
+        "_mixins.scss",
+        "_nesting.scss",
+        "_operators.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

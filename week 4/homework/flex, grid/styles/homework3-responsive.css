@@ -1,0 +1,121 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: #3194f7;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  header {
+    height: 70px;
+    background-color: rgb(9, 122, 9);
+  }
+
+  footer {
+    height: 70px;
+    background-color: rgb(9, 122, 9);
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(9, 122, 9, 0.3);
+    align-items: center;
+  }
+
+  section {
+    width: 150px;
+    height: 150px;
+  }
+
+  .first {
+    background-image: url(https://avatarfiles.alphacoders.com/687/thumb-1920-68767.jpg);
+    background-size: 150px 150px;
+    margin-bottom: 5px;
+  }
+
+  .second {
+    background-image: url(https://www2.deloitte.com/content/dam/Deloitte/global/Images/promo_images/gx-public-sector-buenos-aires-p.jpg/_jcr_content/renditions/cq5dam.web.250.250.mobile.jpeg);
+    background-size: 150px 150px;
+    margin: 5px;
+  }
+
+  .third {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ6NANCoGHXtPSr_7pidFf7RtqJ36tsWZV5Ng&usqp=CAU);
+    background-size: 150px 150px;
+    margin-top: 5px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: #3194f7;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  header {
+    height: 70px;
+    background-color: rgb(9, 122, 9);
+  }
+
+  footer {
+    height: 70px;
+    background-color: rgb(9, 122, 9);
+  }
+
+  main {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(9, 122, 9, 0.3);
+  }
+
+  section {
+    width: 250px;
+    height: 250px;
+  }
+
+  .first {
+    background-image: url(https://avatarfiles.alphacoders.com/687/thumb-1920-68767.jpg);
+    background-size: 250px 250px;
+    margin: 0px;
+  }
+
+  .second {
+    background-image: url(https://www2.deloitte.com/content/dam/Deloitte/global/Images/promo_images/gx-public-sector-buenos-aires-p.jpg/_jcr_content/renditions/cq5dam.web.250.250.mobile.jpeg);
+    background-size: 250px 250px;
+    margin: 0px;
+  }
+
+  .third {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ6NANCoGHXtPSr_7pidFf7RtqJ36tsWZV5Ng&usqp=CAU);
+    background-size: 250px 250px;
+    margin: 0px;
+  }
+}
