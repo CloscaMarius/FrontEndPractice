@@ -6,14 +6,6 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
   body {
     background-color: #3194f7;
     display: flex;
@@ -62,6 +54,15 @@
     background-size: 150px 150px;
     margin-top: 5px;
   }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  
 }
 
 /* Medium Devices, Desktops */

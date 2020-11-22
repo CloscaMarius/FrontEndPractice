@@ -6,14 +6,6 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
   body {
     background: #5a3f37;
     background: -webkit-linear-gradient(to right, #2c7744, #5a3f37);
@@ -62,6 +54,15 @@
   .fast {
     background-image: url("https://la-micutu.ro/wp-content/uploads/2019/10/IMG_9074-e1583962707360.jpg");
   }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  
 }
 
 /* Medium Devices, Desktops */

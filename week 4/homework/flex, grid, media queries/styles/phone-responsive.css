@@ -25,27 +25,85 @@
   .firstPage {
     background-color: rgb(197, 75, 60);
     display: grid;
-    grid-gap: 20px;
-    width: 1200px;
+    grid-gap: 5px;
+    width: auto;
     height: 800px;
     font-family: system-ui;
     grid-template-rows: 57.14% 28.57% 14.28%;
   }
 
-  header {
+  .firstPage .intro p {
+    margin: 0px;
+  }
+  .shareicons{
+    display: inline-flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .firstPage main section i {
+    margin-top: 10px;
+    font-size: 36px;
+    color: red;
+  }
+
+  .firstPage header {
     grid-column: 1/2;
     grid-row: 1/2;
+    background-image: url(https://www.wallpapertip.com/wmimgs/3-36136_dslr-background-hd-blur.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: 50% 50%;
-    align-content: center;
+    grid-template-rows: 25% 75%;
   }
-  header div {
-    width: 300px;
+  .firstPage .intro {
+    grid-row: 1/2;
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
     height: 100px;
-    grid-column: 2/3;
+    justify-self: center;
     color: white;
+    align-items: center;
   }
-  main {
+
+  .store{
+    display: inline-flex;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  .googleplay {
+    width: 100px;
+    height: 30px;
+    background-image: url(https://www.virtualphysicaltherapists.com/wp-content/uploads/2017/07/Indiewallet-Google-Play-button.png);
+    background-size: 100px 30px;
+  }
+  .appstore{
+    width: 100px;
+    height: 30px;
+    background-image: url(https://logos-download.com/wp-content/uploads/2016/06/Available_on_the_App_Store_logo.png);
+    background-size: 100px 30px;
+  }
+  .firstPage header .textBox {
+    width: 300px;
+    height: 300px;
+    color: white;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+  }
+  .firstPage header .image {
+    background-image: url("phone1.png");
+    background-size: 250px 300px;
+    width: 250px;
+    height: 300px;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    place-self: flex-end;
+  }
+  .firstPage main {
     display: inline-flex;
     justify-content: center;
     background-color: white;
@@ -53,20 +111,22 @@
     grid-row: 2/3;
     text-align: center;
   }
-  main section {
+  .firstPage main section {
     width: 200px;
     height: 100px;
     margin-left: 50px;
     margin-right: 50px;
   }
-  .sectionText {
+  .firstPage .sectionText {
     font-size: 20px;
+    margin: 5px;
   }
-  .headingText {
+  .firstPage .headingText {
     font-size: 13px;
     color: grey;
+    text-align: center;
   }
-  .statement {
+  .firstPage .statement {
     font-size: 20px;
     font-weight: bold;
   }
@@ -74,17 +134,196 @@
     font-size: 10px;
   }
 
-  footer {
+  .firstPage footer {
     grid-column: 1/2;
     grid-row: 3/4;
     display: flex;
+    flex-direction: column;
     text-align: center;
     color: white;
     font-size: 20px;
     justify-content: center;
   }
-  footer p {
+  .firstPage footer p {
     margin-top: 10px;
     font-weight: 10;
+  }
+
+  .secondPage {
+    background-color: rgb(57, 59, 71);
+    display: grid;
+    width: auto;
+    height: 400px;
+    font-family: system-ui;
+    grid-template-rows: 15% 85%;
+    color: white;
+  }
+  .secondPage header {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 10;
+  }
+
+  .secondPage main {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .secondPage .left {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .secondPage .left div {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+  }
+  .secondPage .right {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: flex;
+    place-items: flex-end;
+  }
+  .secondPage .right .image {
+    width: 250px;
+    height: 300px;
+    background-image: url("phone2.png");
+    background-size: 250px 300px;
+  }
+  .headingText {
+    text-align: left;
+    font-size: 17px;
+  }
+  .thirdPage {
+    background-color: rgb(43, 46, 55);
+    display: grid;
+    grid-gap: 20px;
+    width: auto;
+    height: 350px;
+    font-family: system-ui;
+    grid-template-columns: 50% 50%;
+    color: white;
+  }
+  .thirdPage .left {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .thirdPage .left .image {
+    width: 250px;
+    height: 300px;
+    background-image: url("phone3.png");
+    background-size: 250px 300px;
+  }
+  .thirdPage .right {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .thirdPage .right div {
+    margin-top: 40px;
+    width: 300px;
+    height: 100px;
+  }
+  .fourthPage {
+    background-color: rgb(57, 59, 71);
+    display: grid;
+    grid-gap: 20px;
+    width: auto;
+    height: 350px;
+    font-family: system-ui;
+    grid-template-columns: 50% 50%;
+    color: white;
+  }
+  .fourthPage .left {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .fourthPage .left div {
+    margin-top: 40px;
+    width: 300px;
+    height: 100px;
+  }
+  .fourthPage .right {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .fourthPage .right .image {
+    width: 250px;
+    height: 300px;
+    background-image: url("phone4.png");
+    background-size: 250px 300px;
+  }
+  .fifthPage {
+    background-color: rgb(197, 75, 60);
+    width: auto;
+    height: 600px;
+    font-family: system-ui;
+    color: white;
+    display: grid;
+    grid-template-rows: 90% 10%;
+  }
+  .fifthPage main {
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  .fifthPage main p {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 10;
+  }
+  .fifthPage .complete {
+    width: 400px;
+    height: 30px;
+    border-radius: 4px;
+    border: white;
+  }
+  #message {
+    width: 400px;
+    height: 90px;
+    border-radius: 4px;
+    border: white;
+  }
+  .fifthPage .button {
+    height: 30px;
+    background-color: rgb(173, 72, 54);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    align-self: flex-start;
+  }
+  .fifthPage footer {
+    grid-row: 2/3;
+    background-color: white;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: auto;
+    height: 20px;
+  }
+
+  .fifthPage footer p {
+    color: rgb(197, 75, 60);
+    text-align: center;
   }
 }
