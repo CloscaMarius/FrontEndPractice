@@ -5,15 +5,889 @@
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .firstPage {
+    background-color: rgb(197, 75, 60);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    /* height: 800px; */
+    font-family: system-ui;
+  }
+
+  .firstPage .intro p {
+    margin: 0px;
+  }
+  .shareicons {
+    display: inline-flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .firstPage main section i {
+    margin-top: 10px;
+    font-size: 36px;
+    color: red;
+  }
+
+  .firstPage header {
+    background-image: linear-gradient(
+        rgba(197, 75, 60, 0.5),
+        rgba(197, 75, 60, 0.5)
+      ),
+      url(https://www.wallpapertip.com/wmimgs/3-36136_dslr-background-hd-blur.jpg);
+    background-size: cover;
+    z-index: 1;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+  }
+  .firstPage .intro {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    color: white;
+    align-items: center;
+  }
+
+  .store {
+    display: inline-flex;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  .googleplay {
+    width: 100px;
+    height: 30px;
+    background-image: url(https://www.virtualphysicaltherapists.com/wp-content/uploads/2017/07/Indiewallet-Google-Play-button.png);
+    background-size: 100px 30px;
+  }
+  .appstore {
+    width: 100px;
+    height: 30px;
+    background-image: url(https://logos-download.com/wp-content/uploads/2016/06/Available_on_the_App_Store_logo.png);
+    background-size: 100px 30px;
+  }
+  .firstPage header .textBox {
+    width: 400px;
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+  }
+
+  .firstPage header .image {
+    background-image: url("phone1.png");
+    background-size: 250px 300px;
+    opacity: 0.5;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    position: absolute;
+    top: 108px;
+  }
+
+  .firstPage main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+  }
+  .firstPage main section {
+    width: 400px;
+    height: 160px;
+    margin: 30px;
+  }
+  .firstPage .sectionText {
+    font-size: 20px;
+    margin: 5px;
+  }
+  .firstPage .headingText {
+    font-size: 13px;
+    color: grey;
+    text-align: center;
+  }
+  .firstPage .statement {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .text {
+    font-size: 10px;
+  }
+
+  .firstPage footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    background-color: rgb(197, 75, 60);
+  }
+  .firstPage footer p {
+    /* margin-top: 10px; */
+    font-weight: 10;
+  }
+  .secondPage {
+    background-color: rgb(57, 59, 71);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    /* height: 400px; */
+    font-family: system-ui;
+    color: white;
+  }
+  .secondPage header {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 10;
+  }
+
+  .secondPage main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secondPage .left div {
+    width: auto;
+    /* height: 100px; */
+    align-self: center;
+    padding: 10px;
+  }
+
+  .secondPage .right .image {
+    width: 250px;
+    height: 300px;
+    background-image: url("phone2.png");
+    background-size: 250px 300px;
+  }
+  .headingText {
+    text-align: center;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+  }
+  .thirdPage {
+    background-color: rgb(43, 46, 55);
+    display: flex;
+    flex-direction: column-reverse;
+    width: auto;
+    /* height: 350px; */
+    font-family: system-ui;
+    color: white;
+    align-items: center;
+    /* gap: 20px; */
+  }
+  .thirdPage .left {
+    display: flex;
+    flex-direction: column;
+  }
+  .thirdPage .left .image {
+    width: 250px;
+    height: 300px;
+    background-image: url("phone3.png");
+    background-size: 250px 300px;
+    
+  }
+  .thirdPage .right {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .thirdPage .right div {
+    width: auto;
+    /* height: 100px; */
+    align-self: center;
+    padding: 10px;
+  }
+  .fourthPage {
+    background-color: rgb(57, 59, 71);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    /* height: 350px; */
+    font-family: system-ui;
+    color: white;
+    align-items: center;
+    /* gap: 20px; */
+  }
+  /* .fourthPage .left {
+    display: flex;
+    justify-content: flex-end;
+  } */
+  .fourthPage .left div {
+    width: auto;
+    /* height: 100px; */
+    align-self: center;
+    padding: 10px;
+  }
+  /* .fourthPage .right {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  } */
+  .fourthPage .right .image {
+    width: 250px;
+    height: 300px;
+    background-image: url("phone4.png");
+    background-size: 250px 300px;
+  }
+  .fifthPage {
+    background-color: rgb(197, 75, 60);
+    width: auto;
+    height: 600px;
+    font-family: system-ui;
+    color: white;
+    display: grid;
+    grid-template-rows: 90% 10%;
+  }
+  .fifthPage main {
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  .fifthPage main p {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 10;
+  }
+  .fifthPage .complete {
+    width: auto;
+    height: 30px;
+    border-radius: 4px;
+    border: white;
+  }
+  #message {
+    width: auto;
+    height: 90px;
+    border-radius: 4px;
+    border: white;
+  }
+  .fifthPage .button {
+    height: 30px;
+    background-color: rgb(173, 72, 54);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    align-self: flex-start;
+  }
+  .fifthPage footer {
+    grid-row: 2/3;
+    background-color: white;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: auto;
+    height: 20px;
+  }
+
+  .fifthPage footer p {
+    color: rgb(197, 75, 60);
+    text-align: center;
+  }
+
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .firstPage {
+    background-color: rgb(197, 75, 60);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    /* height: 800px; */
+    font-family: system-ui;
+  }
+
+  .firstPage .intro p {
+    margin: 0px;
+  }
+  .shareicons {
+    display: inline-flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .firstPage main section i {
+    margin-top: 10px;
+    font-size: 36px;
+    color: red;
+  }
+
+  .firstPage header {
+    background-image: linear-gradient(
+        rgba(197, 75, 60, 0.5),
+        rgba(197, 75, 60, 0.5)
+      ),
+      url(https://www.wallpapertip.com/wmimgs/3-36136_dslr-background-hd-blur.jpg);
+    background-size: cover;
+    z-index: 1;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+  }
+  .firstPage .intro {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    color: white;
+    align-items: center;
+  }
+
+  .store {
+    display: inline-flex;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  .googleplay {
+    width: 100px;
+    height: 30px;
+    background-image: url(https://www.virtualphysicaltherapists.com/wp-content/uploads/2017/07/Indiewallet-Google-Play-button.png);
+    background-size: 100px 30px;
+  }
+  .appstore {
+    width: 100px;
+    height: 30px;
+    background-image: url(https://logos-download.com/wp-content/uploads/2016/06/Available_on_the_App_Store_logo.png);
+    background-size: 100px 30px;
+  }
+  .firstPage header .textBox {
+    width: 400px;
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+  }
+
+  .firstPage header .image {
+    background-image: url("phone1.png");
+    background-size: 250px 300px;
+    opacity: 0.5;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    position: absolute;
+    top: 108px;
+  }
+
+  .firstPage main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+  }
+  .firstPage main section {
+    width: 400px;
+    height: 160px;
+    margin: 30px;
+  }
+  .firstPage .sectionText {
+    font-size: 20px;
+    margin: 5px;
+  }
+  .firstPage .headingText {
+    font-size: 13px;
+    color: grey;
+    text-align: center;
+  }
+  .firstPage .statement {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .text {
+    font-size: 10px;
+  }
+
+  .firstPage footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    background-color: rgb(197, 75, 60);
+  }
+  .firstPage footer p {
+    /* margin-top: 10px; */
+    font-weight: 10;
+  }
+  .secondPage {
+    background-color: rgb(57, 59, 71);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    /* height: 400px; */
+    font-family: system-ui;
+    color: white;
+  }
+  .secondPage header {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 10;
+  }
+
+  .secondPage main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secondPage .left div {
+    width: auto;
+    /* height: 100px; */
+    align-self: center;
+    padding: 10px;
+  }
+
+  .secondPage .right .image {
+    width: 250px;
+    height: 300px;
+    background-image: url("phone2.png");
+    background-size: 250px 300px;
+  }
+  .headingText {
+    text-align: center;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+  }
+  .thirdPage {
+    background-color: rgb(43, 46, 55);
+    display: flex;
+    flex-direction: column-reverse;
+    width: auto;
+    /* height: 350px; */
+    font-family: system-ui;
+    color: white;
+    align-items: center;
+    /* gap: 20px; */
+  }
+  .thirdPage .left {
+    display: flex;
+    flex-direction: column;
+  }
+  .thirdPage .left .image {
+    width: 250px;
+    height: 300px;
+    background-image: url("phone3.png");
+    background-size: 250px 300px;
+    
+  }
+  .thirdPage .right {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .thirdPage .right div {
+    width: auto;
+    /* height: 100px; */
+    align-self: center;
+    padding: 10px;
+  }
+  .fourthPage {
+    background-color: rgb(57, 59, 71);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    /* height: 350px; */
+    font-family: system-ui;
+    color: white;
+    align-items: center;
+    /* gap: 20px; */
+  }
+  /* .fourthPage .left {
+    display: flex;
+    justify-content: flex-end;
+  } */
+  .fourthPage .left div {
+    width: auto;
+    /* height: 100px; */
+    align-self: center;
+    padding: 10px;
+  }
+  /* .fourthPage .right {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  } */
+  .fourthPage .right .image {
+    width: 250px;
+    height: 300px;
+    background-image: url("phone4.png");
+    background-size: 250px 300px;
+  }
+  .fifthPage {
+    background-color: rgb(197, 75, 60);
+    width: auto;
+    height: 600px;
+    font-family: system-ui;
+    color: white;
+    display: grid;
+    grid-template-rows: 90% 10%;
+  }
+  .fifthPage main {
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  .fifthPage main p {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 10;
+  }
+  .fifthPage .complete {
+    width: 400px;
+    height: 30px;
+    border-radius: 4px;
+    border: white;
+  }
+  #message {
+    width: 400px;
+    height: 90px;
+    border-radius: 4px;
+    border: white;
+  }
+  .fifthPage .button {
+    height: 30px;
+    background-color: rgb(173, 72, 54);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    align-self: flex-start;
+  }
+  .fifthPage footer {
+    grid-row: 2/3;
+    background-color: white;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: auto;
+    height: 20px;
+  }
+
+  .fifthPage footer p {
+    color: rgb(197, 75, 60);
+    text-align: center;
+  }
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .firstPage {
+    background-color: rgb(197, 75, 60);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    /* height: 800px; */
+    font-family: system-ui;
+  }
+
+  .firstPage .intro p {
+    margin: 0px;
+  }
+  .shareicons {
+    display: inline-flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .firstPage main section i {
+    margin-top: 10px;
+    font-size: 36px;
+    color: red;
+  }
+
+  .firstPage header {
+    background-image: linear-gradient(
+        rgba(197, 75, 60, 0.5),
+        rgba(197, 75, 60, 0.5)
+      ),
+      url(https://www.wallpapertip.com/wmimgs/3-36136_dslr-background-hd-blur.jpg);
+    background-size: cover;
+    z-index: 1;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+  }
+  .firstPage .intro {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    color: white;
+    align-items: center;
+  }
+
+  .store {
+    display: inline-flex;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  .googleplay {
+    width: 100px;
+    height: 30px;
+    background-image: url(https://www.virtualphysicaltherapists.com/wp-content/uploads/2017/07/Indiewallet-Google-Play-button.png);
+    background-size: 100px 30px;
+  }
+  .appstore {
+    width: 100px;
+    height: 30px;
+    background-image: url(https://logos-download.com/wp-content/uploads/2016/06/Available_on_the_App_Store_logo.png);
+    background-size: 100px 30px;
+  }
+  .firstPage header .textBox {
+    width: 400px;
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+  }
+
+  .firstPage header .image {
+    background-image: url("phone1.png");
+    background-size: 250px 300px;
+    opacity: 0.5;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    position: absolute;
+    top: 108px;
+  }
+
+  .firstPage main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+  }
+  .firstPage main section {
+    width: 400px;
+    height: 160px;
+    margin: 30px;
+  }
+  .firstPage .sectionText {
+    font-size: 20px;
+    margin: 5px;
+  }
+  .firstPage .headingText {
+    font-size: 13px;
+    color: grey;
+    text-align: center;
+  }
+  .firstPage .statement {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .text {
+    font-size: 10px;
+  }
+
+  .firstPage footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    background-color: rgb(197, 75, 60);
+  }
+  .firstPage footer p {
+    /* margin-top: 10px; */
+    font-weight: 10;
+  }
+  .secondPage {
+    background-color: rgb(57, 59, 71);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    /* height: 400px; */
+    font-family: system-ui;
+    color: white;
+  }
+  .secondPage header {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 10;
+  }
+
+  .secondPage main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secondPage .left div {
+    width: auto;
+    height: 100px;
+    align-self: center;
+    padding: 10px;
+  }
+
+  .secondPage .right .image {
+    width: 250px;
+    height: 300px;
+    background-image: url("phone2.png");
+    background-size: 250px 300px;
+  }
+  .headingText {
+    text-align: center;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+  }
+  .thirdPage {
+    background-color: rgb(43, 46, 55);
+    display: flex;
+    flex-direction: column-reverse;
+    width: auto;
+    /* height: 350px; */
+    font-family: system-ui;
+    color: white;
+    align-items: center;
+  }
+  .thirdPage .left {
+    display: flex;
+    flex-direction: column;
+  }
+  .thirdPage .left .image {
+    width: 250px;
+    height: 300px;
+    background-image: url("phone3.png");
+    background-size: 250px 300px;
+  }
+  .thirdPage .right {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .thirdPage .right div {
+    width: auto;
+    height: 100px;
+    align-self: center;
+    padding: 10px;
+  }
+  .fourthPage {
+    background-color: rgb(57, 59, 71);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    /* height: 350px; */
+    font-family: system-ui;
+    color: white;
+    align-items: center;
+  }
+  /* .fourthPage .left {
+    display: flex;
+    justify-content: flex-end;
+  } */
+  .fourthPage .left div {
+    width: auto;
+    height: 100px;
+    align-self: center;
+    padding: 10px;
+  }
+  /* .fourthPage .right {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  } */
+  .fourthPage .right .image {
+    width: 250px;
+    height: 300px;
+    background-image: url("phone4.png");
+    background-size: 250px 300px;
+  }
+  .fifthPage {
+    background-color: rgb(197, 75, 60);
+    width: auto;
+    height: 600px;
+    font-family: system-ui;
+    color: white;
+    display: grid;
+    grid-template-rows: 90% 10%;
+  }
+  .fifthPage main {
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  .fifthPage main p {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 10;
+  }
+  .fifthPage .complete {
+    width: 400px;
+    height: 30px;
+    border-radius: 4px;
+    border: white;
+  }
+  #message {
+    width: 400px;
+    height: 90px;
+    border-radius: 4px;
+    border: white;
+  }
+  .fifthPage .button {
+    height: 30px;
+    background-color: rgb(173, 72, 54);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    align-self: flex-start;
+  }
+  .fifthPage footer {
+    grid-row: 2/3;
+    background-color: white;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: auto;
+    height: 20px;
+  }
+
+  .fifthPage footer p {
+    color: rgb(197, 75, 60);
+    text-align: center;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -35,7 +909,7 @@
   .firstPage .intro p {
     margin: 0px;
   }
-  .shareicons{
+  .shareicons {
     display: inline-flex;
     gap: 10px;
     margin-top: 10px;
@@ -67,7 +941,7 @@
     align-items: center;
   }
 
-  .store{
+  .store {
     display: inline-flex;
     gap: 15px;
     margin-top: 30px;
@@ -78,7 +952,7 @@
     background-image: url(https://www.virtualphysicaltherapists.com/wp-content/uploads/2017/07/Indiewallet-Google-Play-button.png);
     background-size: 100px 30px;
   }
-  .appstore{
+  .appstore {
     width: 100px;
     height: 30px;
     background-image: url(https://logos-download.com/wp-content/uploads/2016/06/Available_on_the_App_Store_logo.png);
