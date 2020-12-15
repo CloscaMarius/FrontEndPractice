@@ -132,7 +132,7 @@ console.log("Ex9.1: " + "acetilsalicilic".endsWith("salicilic"));
 // Implementati o functie care accepta doua argumente: un array si o functie de adevar. Functia returneaza primul element din array care 
 //trece testul specificat
 
-function divisibleBy3(array) {
+/*function divisibleBy3(array) {
     var myArray = new Array();
     for (i = 0; i < array.length; i++) {
         if (array[i] % 3 === 0) {
@@ -144,11 +144,34 @@ function divisibleBy3(array) {
 function firstDivisibleNumber(array, condFunc) {
     array = condFunc;
     return array[0];
+}*/
+
+function divisibleBy3(element) {
+    if(element % 3 === 0){
+        return true;
+    }
+    return false;
+}
+function divisibleBy2(element) {
+    if(element % 2 === 0){
+        return true;
+    }
+    return false;
+}
+
+function firstDivisibleNumber(array, condFunc) {
+    var myArray = new Array();
+    for (i = 0; i < array.length; i++) {
+        if (condFunc(array[i])) {
+            myArray.push(array[i]);
+        }
+    }
+    return myArray[0];
 }
 
 var array = [1, 2, 9, 4, 5, 6];
-//console.log(divisibleBy3(array));
-console.log("Ex10: " + firstDivisibleNumber(array, divisibleBy3(array)));
+console.log("Ex10: " + firstDivisibleNumber(array, divisibleBy3));
+console.log("Ex10: " + firstDivisibleNumber(array, divisibleBy2));
 
 //Ex11
 // Implementati o functie care accepta ca argumente doua string-uri si verifica daca primul string contine toate literele celui de-al doilea 
