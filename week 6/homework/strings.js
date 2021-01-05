@@ -32,38 +32,38 @@ function capitalize(input) {
 console.log(capitalize("js string exercises"));
 
 // 6. Scrieti o functie care elimina un numar specificat de caractere pornind de la inceputul string-ului:
-function  truncate_string(string, index){
-return string.slice(0, index);
+function truncate_string(string, index) {
+    return string.slice(0, index);
 };
-console.log(truncate_string("Robin Singh",4));
+console.log(truncate_string("Robin Singh", 4));
 
 // 7. Scrieti o functie care specifica daca o caracterul de la o anumita pozitie specificata dintr-un string este litera mare sau nu:
-function isUpperCaseAt(string, index){
-return string.charAt(index) === string.charAt(index).toUpperCase();
+function isUpperCaseAt(string, index) {
+    return string.charAt(index) === string.charAt(index).toUpperCase();
 };
 console.log(isUpperCaseAt('Js STRING EXERCISES', 1));
 
 // 8. Scrieti o functie care insereaza un string la o anumita pozitie intr-un alt string:
-function insert(string, stringInsert, index){
-return string.slice(0,index) + stringInsert + string.slice(index);
+function insert(string, stringInsert, index) {
+    return string.slice(0, index) + stringInsert + string.slice(index);
 };
-console.log(insert("We are doing some exercises.","JavaScript ", 18));
+console.log(insert("We are doing some exercises.", "JavaScript ", 18));
 
 // 9. Scrieti o functie care elimina prima aparitie a unui string dintr-un alt string:
-function remove_first_occurrence(mainString, string){
-return mainString.replace(string + " ", "");
+function remove_first_occurrence(mainString, string) {
+    return mainString.replace(string + " ", "");
 };
 console.log(remove_first_occurrence("The quick brown fox jumps over the lazy dog", 'the'));
- 
+
 // 10. Scrieti o functie care compara doua string-uri case-insensitive:
-function compare_strings(firstString, secondString){
-    return firstString.toLowerCase()===secondString.toLowerCase();
+function compare_strings(firstString, secondString) {
+    return firstString.toLowerCase() === secondString.toLowerCase();
 };
-console.log(compare_strings("a","A"));
+console.log(compare_strings("a", "A"));
 
 // 11. Scrieti o functie care face ca primul caracter a unui string sa fie de tip uncapital:
-function Uncapitalize(string){
-return string.toLowerCase();
+function Uncapitalize(string) {
+    return string.toLowerCase();
 };
 console.log(Uncapitalize("Js string exercises"));
 

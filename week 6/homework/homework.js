@@ -43,7 +43,7 @@ proprietati pentru titlu, autor si daca aceasta carte este citita sau nu */
 var book = function (title, author, isItRead) {
     this.title = title;
     this.author = author;
-    this.isItRead  = isItRead;
+    this.isItRead = isItRead;
 }
 
 var book1 = new book("Anna Karenina", "Lev Tolstoi", false);
@@ -52,7 +52,7 @@ var book3 = new book("The Idiot", "Feodor Dostoievski", true);
 var book4 = new book("Crime and Punishment", "Feodor Dostoievski", false);
 var book5 = new book("The Brothers Karamazov", "Feodor Dostoievski", false);
 
-var library = [book1,book2,book3,book4,book5];
+var library = [book1, book2, book3, book4, book5];
 
 /* 4.2. iterati prin aceasta colectie de carti si afisati la consola titlul si autorul fiecarei carti.
 De exemplu pentru “The Hobbit” a lui J.R.R. Tolkien ar trebui sa afisati “The Hobbit by
@@ -60,11 +60,11 @@ J.R.R Tolkien” */
 
 // 4.3. modificati programul astfel incat sa se afiseze si daca o carte a fost citita sau nu
 
-for(i=0;i<library.length;i++){
-    if(library[i].isItRead){
+for (i = 0; i < library.length; i++) {
+    if (library[i].isItRead) {
         console.log(library[i].title + " by " + library[i].author + " - it has been read");
-    }else{
+    } else {
         console.log(library[i].title + " by " + library[i].author + " - it has not been read");
     }
-    
+
 }
