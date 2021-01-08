@@ -42,6 +42,6 @@ const validation = () => {
 
 
 const button = document.getElementById('button');
-button.addEventListener('click',validation);
+button.addEventListener('click', validation);
 
 
