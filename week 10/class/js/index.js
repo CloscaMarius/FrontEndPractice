@@ -11,8 +11,8 @@ const randomColor = "#" + ((1 << 24) * Math.random() | 0).toString(16);
 const cameleonEventHandler = () => {
     line.style.color = randomColor;
 }
-// line.addEventListener('click', cameleonEventHandler);
-line.onclick = cameleonEventHandler;
+line.addEventListener('click', cameleonEventHandler);
+// line.onclick = cameleonEventHandler;
 /*
 2. Avand formularul dat, adaugati un event listener pentru buton care apeleaza o
 functie postTheGossip cand este apasat
@@ -85,12 +85,19 @@ areaBtn.addEventListener('click', areaCircle);
 iar la apasarea tastei ⬇️ sa i se scada dimensiunea cu 10%.
 */
 const balon = document.getElementById('balon');
-balon.addEventListener('keydown', e => {
+window.addEventListener('keydown', e => {
 
-    //e = e || window.event;
-    if (e.key == 'ArrowUp') {
-        balon.style.width += 100 ;
-    } else if (e.key == 'ArrowDown') {
-        balon.style.width -= 100;
+    let currentSize = parseInt(balon.style.fontSize);
+
+    if(isNaN(currentSize)){
+        currentSize = 15;
     }
-})
+    let factor = 2;
+    
+    if (e.key == 'ArrowUp') {
+        balon.style.fontSize = (currentSize + factor) + 'px';
+    }
+    if (e.key == 'ArrowDown') {
+        balon.style.fontSize = (currentSize - factor) + 'px';
+    }
+});

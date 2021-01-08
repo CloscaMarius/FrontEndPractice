@@ -5,23 +5,19 @@
     <link rel="stylesheet" href="../styles/shopping.css">
   </head>
   <body>
-    <form>
       <div class="shopping">
         <p>Shopping list</p>
       </div>
-      <div class="items">
+      <div>
         <label for="add">Add Items</label><br>
         <input type="text" id="add" name="item">
-        <input type="submit">
-    </form>
+        <input type="submit" id="button">
+        <input type="submit" id="remove" value="Remove">
         <p>Items</p>
-        <ul class="item">
-
+        <ul id="items">
         </ul>
       </div>
-      <script>
-        let item = document.getElementById('add')
-        item.add
+      <script src="../js/shopping.js">
       </script>
   </body>
 </html>
