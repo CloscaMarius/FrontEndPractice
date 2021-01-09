@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../styles/signup.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h3>Sign Up</h3>
+
+      <label for="username">Username:</label>
+      <div class="error" id="usernameErr">Please enter a username.</div>
+      <br />
+      <input type="text" id="username" />
+      <span id="validUsername">Valid</span>
+      <p>(Must be at least 4 characters)</p>
+      <br />
+      <label for="password">Password:</label>
+      <div class="error" id="passwordErr">Please enter a valid password.</div>
+      
+      <br />
+      <input type="password" id="password" />
+      <span id="validPassword">Valid</span>
+      <p>
+        (Must have at least 1 Uppercase letter, 1 lowercase letter, 1 number.)
+      </p>
+      <br />
+      <label for="confirmPassword">Confirm password:</label>
+      <div class="error" id="confirmPasswordErr">
+        Please re-enter the password.
+      </div>
+      <br />
+      <input type="password" id="confirmPassword" />
+      <span id="validConfirmPassword">Valid</span>
+      <br />
+      <p id="mandatory">Mandatory</p>
+      <br />
+
+      <input type="submit" id="button" value="NEXT" />
+    </div>
+    <script src="../js/signup.js"></script>
+  </body>
+</html>

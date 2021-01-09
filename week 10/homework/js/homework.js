@@ -2,10 +2,9 @@
 const validation = () => {
     let username = document.getElementById('username').value;
     let usernameErr = document.getElementById('usernameErr');
-    if (username.length < 4) {
-        usernameErr.style.display = 'block';
-    }
-    var reg = /^[0-9a-zA-Z]+$/;
+    
+    //var reg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{4,}$/;
+    var reg = /^[0-9a-zA-Z]{4,}$/;
     if (!username.match(reg)) {
         usernameErr.style.display = 'block';
     }
