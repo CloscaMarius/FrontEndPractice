@@ -147,13 +147,13 @@ function firstDivisibleNumber(array, condFunc) {
 }*/
 
 function divisibleBy3(element) {
-    if(element % 3 === 0){
+    if (element % 3 === 0) {
         return true;
     }
     return false;
 }
 function divisibleBy2(element) {
-    if(element % 2 === 0){
+    if (element % 2 === 0) {
         return true;
     }
     return false;
@@ -219,7 +219,7 @@ function deleteFalse(array) {
     return array.filter(Boolean);
 }
 var array = [false, 4, 6, "string", true, 0, '', undefined, NaN];
-console.log("Ex13: "+deleteFalse(array));
+console.log("Ex13: " + deleteFalse(array));
 
 
 // Ex 14
