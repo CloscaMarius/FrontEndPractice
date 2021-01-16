@@ -72,15 +72,18 @@ const releases = [
     }
 ];
 
-// releases.forEach(x => {
-//     delete x.bookmark,
-//         delete x.rating,
-//         delete x.uri,
-//         delete x.boxart
-// });
-
 console.log('Ex3: ');
+
+releases.forEach(x => {
+    delete x.bookmark,
+        delete x.rating,
+        delete x.uri,
+        delete x.boxart
+});
+console.log(releases);
+//----------//
 releases.forEach(x => console.log(x.id + ' ' + x.title));
+
 console.log();
 
 //4. Returnati id-urile videourilor care au rating 5.0
