@@ -5,7 +5,11 @@
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) and (max-width: 1200px) {
+@media only screen and (min-width: 320px) and (max-width: 1199px) {
+  body {
+    margin: auto;
+  }
+
   .firstPage {
     background-color: rgb(197, 75, 60);
     display: flex;
@@ -87,7 +91,7 @@
     flex-direction: column;
     z-index: -1;
     position: absolute;
-    top: 108px;
+    top: 100px;
   }
 
   .firstPage main {
@@ -300,7 +304,7 @@
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width: 768px)  {
+@media only screen and (min-width: 768px) {
 }
 
 /* Medium Devices, Desktops */
@@ -309,6 +313,10 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
+  body {
+    margin: auto;
+  }
+
   .firstPage {
     background-color: rgb(197, 75, 60);
     display: grid;
@@ -490,7 +498,7 @@
   .thirdPage {
     background-color: rgb(43, 46, 55);
     display: grid;
-    grid-gap: 20px;
+    /* grid-gap: 20px; */
     width: auto;
     height: 350px;
     font-family: system-ui;
@@ -525,7 +533,7 @@
   .fourthPage {
     background-color: rgb(57, 59, 71);
     display: grid;
-    grid-gap: 20px;
+    /* grid-gap: 20px; */
     width: auto;
     height: 350px;
     font-family: system-ui;
