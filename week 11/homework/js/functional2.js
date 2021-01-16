@@ -15,8 +15,9 @@ const myData = [{
     active: false
 }];
 
+console.log('Ex1: ');
 console.log(myData.filter(x => x.active === true));
-
+console.log();
 
 /*Ex 2
 Convertiti toate distantele in mile - 0.621371 * distance - folosind map
@@ -29,11 +30,11 @@ const distances = [
     { from: 'Sydney', to: 'chittagong', distance: 8858 },
     { from: 'Kolkata', to: 'Sylhet', distance: 670 }
 ]
-
+console.log('Ex2: ');
 distances.map(x => x.distance * 0.621371).forEach(x => console.log(x + ' miles'));
 distances.filter(x => x.distance < 10000).forEach(x => console.log(x));
 console.log(distances.map(x => x.distance).reduce((a, b) => a + b));
-
+console.log();
 
 //3. Returnati un array de obiecte care sa contina doar id si titlul fiecarui item de mai jos 
 const releases = [
@@ -71,12 +72,16 @@ const releases = [
     }
 ];
 
-releases.forEach(x => delete x.bookmark);
-releases.forEach(x => delete x.rating);
-releases.forEach(x => delete x.uri);
-releases.forEach(x => delete x.boxart);
-releases.forEach(x => console.log(x));
+// releases.forEach(x => {
+//     delete x.bookmark,
+//         delete x.rating,
+//         delete x.uri,
+//         delete x.boxart
+// });
 
+console.log('Ex3: ');
+releases.forEach(x => console.log(x.id + ' ' + x.title));
+console.log();
 
 //4. Returnati id-urile videourilor care au rating 5.0
 const newReleases = [
@@ -113,9 +118,9 @@ const newReleases = [
         "bookmark": [{ id: 432534, time: 65876586 }]
     }
 ];
-
+console.log('Ex4: ');
 newReleases.filter(x => x.rating === 5.0).map(x => x.id).forEach(x => console.log(x));
-
+console.log();
 
 //5. Vreau la final sa am o lista de video ids
 
@@ -163,9 +168,9 @@ const movieLists = [
         ]
     }
 ];
-
+console.log('Ex5: ');
 movieLists.map(x => x.videos.map(x => x.id)).forEach(x => console.log(x));
-
+console.log();
 //6. Returnati id, title, si 150x200 box art url pentru fiecare video
 //hint aveti de folosit map,filter
 
@@ -227,8 +232,9 @@ let movieLists2 = [
         ]
     }
 ];
-
+console.log('Ex6: ');
 movieLists2.map(x => x.videos
     .forEach(x => console.log(x.id + ' ' + x.title + ' ' + x.boxarts
-    .filter(x => x.width === 150)
-    .map(x=>x.url))));
+        .filter(x => x.width === 150)
+        .map(x => x.url))));
+console.log();

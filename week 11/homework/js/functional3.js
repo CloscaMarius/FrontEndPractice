@@ -11,9 +11,10 @@ const moveLetters = function (string) {
         .reduce((a, b) => a + b);
 
 }
-
+console.log('Ex1: ');
 console.log(moveLetters('hello'));
 console.log(moveLetters('abcxy'));
+console.log();
 
 // ex2
 // Vreau sa am o functie care sa faca uppercase la cuvinte in functie ca in exemplu de mai jos
@@ -27,8 +28,10 @@ let changeWordCase = function (string) {
         return x.toLowerCase();
     }).join(' ');
 }
+console.log('Ex2: ');
 console.log(changeWordCase('hey ppl, lets learn javascript together sometime'));
 console.log(changeWordCase('a b c d e f g'));
+console.log();
 
 // ex3
 // Faceti astfel incat toate variabilele de mai jos sa returneze ceea ce zice numele
@@ -40,6 +43,7 @@ const arr = [
     { name: 'oreo', sex: 'm', age: 21, species: 'cat' },
 ];
 
+console.log('Ex3: ');
 let allCats = arr.filter(x => x.species === 'cat');
 let allHumans = arr.filter(x => x.species === 'human');
 let allFemales = arr.filter(x => x.sex === 'f');
@@ -47,7 +51,7 @@ let totalOfAllAges = arr.map(x => x.age).reduce((a, b) => a + b);
 let averageAgeOfCats = allCats.map(x => x.age).reduce((a, b) => a + b) / allCats.length;
 let averageAgeOfHumans = allHumans.map(x => x.age).reduce((a, b) => a + b) / allHumans.length;
 let avgLengthOfNames = arr.map(x => x.name.length).reduce((a, b) => a + b) / arr.length;
-
+console.log();
 
 
 
@@ -86,8 +90,8 @@ const isOdd = (array) => {
     return array.filter(x => x % 2 === 1);
 }
 
-const find = (array, function1) =>{
+const find = (array, function1) => {
     return function1(array);
 }
 
-console.log(find([1,2,3,4,5], isOdd));
+console.log(find([1, 2, 3, 4, 5], isOdd));
