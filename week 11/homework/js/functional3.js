@@ -45,12 +45,26 @@ const arr = [
 
 console.log('Ex3: ');
 let allCats = arr.filter(x => x.species === 'cat');
+console.log(allCats);
+
 let allHumans = arr.filter(x => x.species === 'human');
+console.log(allHumans);
+
 let allFemales = arr.filter(x => x.sex === 'f');
+console.log(allFemales);
+
 let totalOfAllAges = arr.map(x => x.age).reduce((a, b) => a + b);
+console.log(totalOfAllAges);
+
 let averageAgeOfCats = allCats.map(x => x.age).reduce((a, b) => a + b) / allCats.length;
+console.log(averageAgeOfCats);
+
 let averageAgeOfHumans = allHumans.map(x => x.age).reduce((a, b) => a + b) / allHumans.length;
+console.log(averageAgeOfHumans);
+
 let avgLengthOfNames = arr.map(x => x.name.length).reduce((a, b) => a + b) / arr.length;
+console.log(avgLengthOfNames);
+
 console.log();
 
 
@@ -64,9 +78,11 @@ const double = (x) => { return x * 2 }
 const composedValue = (function1, function2, value) => {
     return function1(function2(value));
 }
+console.log('Ex1: ');
 console.log(composedValue(square, double, 5));
 console.log(composedValue(double, square, 5));
 console.log(composedValue(square, square, 5));
+console.log();
 
 //ex.2
 //faceti o functie 'compose' care atunci cand va fi apelata returneaza rezultatul altor 2 functii;
@@ -79,8 +95,10 @@ const compose = (function1, function2, number) => {
 const myFunction = (x) => {
     return compose(square, double, x);
 };
+console.log('Ex2: ');
 console.log(myFunction(5));
 console.log(myFunction(10));
+console.log();
 
 //ex.3
 //faceti o functie find care ia ca parametrii un array si o functie care testeaza arrayul si returneaza doar elmentele care trec testele.
@@ -93,5 +111,6 @@ const isOdd = (array) => {
 const find = (array, function1) => {
     return function1(array);
 }
-
+console.log('Ex3: ');
 console.log(find([1, 2, 3, 4, 5], isOdd));
+console.log();
