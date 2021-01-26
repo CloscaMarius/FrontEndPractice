@@ -52,7 +52,7 @@ class Lion extends Animal {
         this.rage()
     }
 
-    get dailyRoutine(){
+    get dailyRoutine() {
         super.wakingUp()
         this.rage()
         super.eatFood()

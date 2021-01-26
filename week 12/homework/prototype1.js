@@ -25,8 +25,8 @@ Trainer.prototype.teach = function (subject) {
 }
 
 const newPerson = new Person('Mihai', 23);
-/* newPerson.setName('Mihai');
-newPerson.setAge(23); */
+newPerson.setName('Mihai');
+newPerson.setAge(23);
 
 const newTrainer = new Trainer('Andrei', 44);
 newTrainer.setName('Andrei');

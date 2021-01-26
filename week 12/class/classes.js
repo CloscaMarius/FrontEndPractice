@@ -14,9 +14,9 @@ class Person {
 
     displayPersonName() {
         console.log(`${this.firstName} ${this.lastName}`);
-        
+
     }
 }
 
-let newPerson = new Person('Marcus','Antonius');
+let newPerson = new Person('Marcus', 'Antonius');
 newPerson.displayPersonName();

@@ -6,7 +6,7 @@
 
 //cand dau console.log(triunghi.constructor) tre sa printeze Triangle(a,b,c)
 
-const forma = function() { };
+const forma = function () { };
 
 
 const Triangle = function (a, b, c) {
