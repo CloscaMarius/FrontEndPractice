@@ -12,13 +12,18 @@ const myPost = {
 const options = {
   method: "POST",
   body: myPost ,
-  headers: {"Content-Type": "application/json"},
+  headers: { "Content-Type": "application/json"},
 };
 
-fetch(url, options);
+fetch(url,options).then(response=>console.log(response));
 
-fetch(url).then(response=>response.json()).then(response=>console.log(response.title));
 //EX2
 //***bonus***//
 //Folosind url-ul gresit tratati cazul in care vom avea eroare
 // trebuie verificat daca raspunsul e corect iar daca nu folosim "throw new Error" - cautati ce face, apoi il prindem in .catch()
+
+fetch(url,options).then(response =>{
+  if(response.status===500){
+    throw new Error('Server Error!')
+  }
+}).catch(response=>{console.log(response)});
