@@ -17,6 +17,7 @@ const constructWorld = (worlds) => {
     newVideo.setAttribute('width', "420");
     newVideo.setAttribute('height', "315");
     const rating = document.createElement('p');
+    const newLine = document.createElement('br');
 
     author.innerHTML = w.author;
     title.innerHTML = w.title;
@@ -37,6 +38,7 @@ const constructWorld = (worlds) => {
     document.body.appendChild(title);
     document.body.appendChild(newVideo);
     document.body.appendChild(rating);
+    document.body.appendChild(newLine);
   })
 
 };
