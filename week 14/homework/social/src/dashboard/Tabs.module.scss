@@ -1,0 +1,89 @@
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.upperTabs {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: repeat(1, 200px);
+  place-content: space-evenly;
+}
+
+.upperTab {
+  background-color: hsl(228, 28%, 20%);
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border: solid;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 5px;
+}
+
+.upperTab:hover{
+  background-color: hsl(228, 18%, 39%);
+}
+
+.lowerTabs {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: repeat(2, 100px);
+  place-content: space-evenly;
+  row-gap: 25px;
+}
+
+.lowerTab {
+  background-color: hsl(228, 28%, 20%);
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 55% 45%;
+  place-items: center;
+  border-radius: 5px;
+}
+
+.lowerTab:hover {
+  background-color: hsl(228, 18%, 39%);
+}
+
+.biggerNumber {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.bigNumber{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.subTitle {
+  color: hsl(228, 34%, 66%);
+  font-weight: 500;
+  margin-top: 0px;
+}
+
+.grayText {
+  color: hsl(228, 34%, 66%);
+  font-weight: 500;
+}
+
+img{
+  vertical-align: middle;
+}
+
+.mainTitle1, .mainTitle2{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.mainTitle1{
+  margin-bottom: 0px;
+}
+  
+
+
+.firstTitle, .secondTitle {
+  margin-left: 4%;
+}
