@@ -6,13 +6,6 @@ class FirstTabs extends React.Component {
         super(props)
     }
 
-//     changeBackground(e) {
-//         e.target.style.background = 'hsl(232, 19%, 15%)'
-// }
-//     defaultBackground(e){
-//         e.target.style.background = ' hsl(228, 28%, 20%)'
-//     }
-
     render() {
         return (
             <div className={style.section}>
@@ -25,7 +18,7 @@ class FirstTabs extends React.Component {
                 <div className={style.upperTabs} >
                     {
                         this.props.firstTabList.map((tab) => (
-                            <div className={style.upperTab} style={{ borderImage: tab.upperColor }} /* onMouseOver={this.changeBackground} onMouseLeave={this.defaultBackground} */>
+                            <div className={style.upperTab} style={{ borderImage: tab.upperColor }} >
                                 <span className={style.grayText}><img src={tab.icon}></img>{tab.user}</span>
                                 <span className={style.biggerNumber}>{tab.number}</span>
                                 <span className={style.grayText}>{tab.type}</span>
