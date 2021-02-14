@@ -7,7 +7,7 @@ import twitterIcon from './images/iconTwitter.svg'
 import youtubeIcon from './images/iconYoutube.svg'
 import downIcon from './images/iconDown.svg'
 import upIcon from './images/iconUp.svg'
-import firstTitle from './dashboard/FirstTitle.js'
+
 
 const firstTabs = [{
   icon: facebookIcon,

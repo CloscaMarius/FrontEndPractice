@@ -1,20 +1,47 @@
 import React from 'react'
 import style from './Tabs.module.scss'
 
+
 class FirstTabs extends React.Component {
     constructor(props) {
         super(props)
     }
+    changeMode = () => {
 
+        
+            
+        
+
+        document.body.toggleAttribute('class');
+        
+        //document.querySelector('.upperTab').toggleAttribute('id');
+        //document.querySelector('.mainTitle1').toggleAttribute('id');
+        //document.querySelector('.mainTitle1').toggleAttribute('id');
+
+
+
+    }
     render() {
         return (
             <div className={style.section}>
-                <div className={style.firstTitle}>
-                    <p className={style.mainTitle1}>Social Media Dashboard</p>
-                    <p className={style.subTitle}>Total Followers: 23,004</p>
+                <div className={style.header}>
+                    <div className={style.firstTitle}>
+                        <p className={style.mainTitle1}>Social Media Dashboard</p>
+                        <p className={style.subTitle}>Total Followers: 23,004</p>
+                    </div>
 
+                    <div className={style.toggleButton}>
+                        <form>
+                            <div className={style.switch}>
+                                <label>
+                                    Dark Mode
+     </label>
+                                <input type="checkbox" onClick={this.changeMode} />
+                                <span className={style.slider}></span>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-
                 <div className={style.upperTabs} >
                     {
                         this.props.firstTabList.map((tab) => (
