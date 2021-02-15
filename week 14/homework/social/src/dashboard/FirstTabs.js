@@ -7,23 +7,13 @@ class FirstTabs extends React.Component {
         super(props)
     }
     changeMode = () => {
-
-        
-            
-        
-
         document.body.toggleAttribute('class');
-        
-        //document.querySelector('.upperTab').toggleAttribute('id');
-        //document.querySelector('.mainTitle1').toggleAttribute('id');
-        //document.querySelector('.mainTitle1').toggleAttribute('id');
-
-
-
     }
     render() {
         return (
+
             <div className={style.section}>
+
                 <div className={style.header}>
                     <div className={style.firstTitle}>
                         <p className={style.mainTitle1}>Social Media Dashboard</p>
@@ -31,15 +21,18 @@ class FirstTabs extends React.Component {
                     </div>
 
                     <div className={style.toggleButton}>
-                        <form>
+                        {/* <form> */}
                             <div className={style.switch}>
                                 <label>
                                     Dark Mode
      </label>
-                                <input type="checkbox" onClick={this.changeMode} />
+                                <input type="checkbox" onClick={this.changeMode}/>
+                                
                                 <span className={style.slider}></span>
+
                             </div>
-                        </form>
+
+                        {/* </form> */}
                     </div>
                 </div>
                 <div className={style.upperTabs} >
@@ -56,7 +49,9 @@ class FirstTabs extends React.Component {
                         ))
                     }
                 </div>
+
             </div>
+
         )
     }
 
