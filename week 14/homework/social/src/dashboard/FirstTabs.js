@@ -24,7 +24,7 @@ class FirstTabs extends React.Component {
                         {/* <form> */}
                             <div className={style.switch}>
                                 <label>
-                                    Dark Mode
+                                    <strong>Dark Mode</strong>
      </label>
                                 <input type="checkbox" onClick={this.changeMode}/>
                                 
