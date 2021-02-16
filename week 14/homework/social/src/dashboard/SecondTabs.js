@@ -14,8 +14,8 @@ class SecondTabs extends React.Component {
                 </div>
                 <div className={style.lowerTabs}>
                     {
-                        this.props.secondTabList.map((tab) => (
-                            <div className={style.lowerTab}>
+                        this.props.secondTabList.map((tab, index) => (
+                            <div className={style.lowerTab} key={index}>
                                 <span className={style.grayText}>{tab.type}</span> <span className={style.secColumn}><img src={tab.icon}></img></span>
                                 <span className={style.bigNumber}>{tab.number}</span>
                                 <span className={style.secColumn} style={{ color: tab.colorRate }}><img src={tab.upOrDown}></img>{tab.rate}</span>

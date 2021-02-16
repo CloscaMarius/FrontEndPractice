@@ -37,8 +37,8 @@ class FirstTabs extends React.Component {
                 </div>
                 <div className={style.upperTabs} >
                     {
-                        this.props.firstTabList.map((tab) => (
-                            <div className={style.upperTab} style={{ borderImage: tab.upperColor }} >
+                        this.props.firstTabList.map((tab, index) => (
+                            <div className={style.upperTab} style={{ borderImage: tab.upperColor }} key={index}>
                                 <span className={style.grayText}><img src={tab.icon}></img>{tab.user}</span>
                                 <span className={style.biggerNumber}>{tab.number}</span>
                                 <span className={style.grayText}>{tab.type}</span>
