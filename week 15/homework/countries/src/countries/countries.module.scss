@@ -1,0 +1,13 @@
+
+
+.countries {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    place-content: space-evenly;
+}
+
+.country img{
+    width: 150px;
+    height: 100px;
+}
