@@ -23,7 +23,7 @@ const { SubMenu } = Menu;
 function App() {
 
   const [countries, setCountries] = useState([])
-  const [region, setRegion] = useState('all')
+  const [region, setRegion] = useState()
 
 
 
@@ -54,21 +54,22 @@ function App() {
         <div>
 
 
-          <select name="countriesByRegion" onChange={(e) => {setRegion(e.target.value)}}>
-            <option value='all'>All</option>
+          <select name="countriesByRegion" onChange={(e)=>{window.location.href=e.target.value}}/* onChange={(e) => {setRegion(e.target.value)}} */>
+          <option value='all'>All</option>
             {
               Array.from(new Set(countries.map(c => c.region))).map((el, idx) =>
-                <option key={idx} value={`/${el}`}>{el}</option>)
+                <option key={idx} value={`${el}`} selected>{el}</option>)
             }
+            
           </select>
-
-          <Link key="one" to='/all'>All</Link>
+            {console.log('value:'+window.location.href)}
+          {/* <Link key="one" to='/all'>All</Link>
           <Link key="two" to='/europe'>Europe</Link>
           <Link key="three" to='/asia'>Asia</Link>
           <Link key="four" to='/africa'>Africa</Link>
           <Link key="five" to='/americas'>Americas</Link>
           <Link key="six" to='/oceania'>Oceania</Link>
-          <Link key="seven" to='/polar'>Polar</Link>
+          <Link key="seven" to='/polar'>Polar</Link> */}
 
 
 
@@ -92,7 +93,7 @@ function App() {
             <Route exact path="/polar" component={withRouter(() => <Countries item="region/polar" />)}></Route>
 
 
-            {/* <Route exact path={`/${region}`} component={withRouter(() => <Countries item={`/${region}`} />)}></Route> */}
+            {/* <Route exact path={`/${window.location.href}`} component={withRouter(() => <Countries item={window.location.href} />)}></Route> */}
             {/* <Countries item={`/${region}`} />
             </Route> */}
           </Switch>

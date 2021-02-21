@@ -8,20 +8,19 @@ import {
 } from "react-router-dom";
 import style from './countries.module.scss'
 import { useHistory } from 'react-router-dom'
-import {withRouter} from 'react-router';
+import { withRouter } from 'react-router';
 
 function Countries({ item }) {
     const [countries, setCountries] = useState([])
     const [region, setRegion] = useState()
-    
 
+    console.log('item:' + item)
     useEffect(() => {
         const serverCall = async () => {
             try {
                 const response = await fetch(`https://restcountries.eu/rest/v2/` + item)
                 const data = await response.json()
                 setCountries(data)
-                console.log('region:' + item)
             } catch (error) {
                 console.log(error)
             }
@@ -29,7 +28,7 @@ function Countries({ item }) {
         serverCall()
     }, [])
 
-    
+
 
     return (
         <div className={style.countries}>
