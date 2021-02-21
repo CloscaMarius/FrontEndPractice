@@ -25,7 +25,7 @@ function App() {
   const [countries, setCountries] = useState([])
   const [region, setRegion] = useState('all')
 
-  console.log("1:" + region)
+
 
   useEffect(() => {
     const serverCall = async () => {
@@ -42,13 +42,8 @@ function App() {
   }, [])
 
 
-  const regionChange = (e) => {
+  
 
-    console.log("2:" + e.target.value)
-    setRegion(e.target.value)
-    console.log("3:" + region)
-  }
-  console.log("4:" + region)
 
 
   return (
@@ -59,14 +54,14 @@ function App() {
         <div>
 
 
-          {/* <select name="countriesByRegion" onChange={regionChange}>
+          <select name="countriesByRegion" onChange={(e) => {setRegion(e.target.value)}}>
             <option value='all'>All</option>
             {
               Array.from(new Set(countries.map(c => c.region))).map((el, idx) =>
-                <option key={idx} value={`region/${el}`}>{el}</option>)
+                <option key={idx} value={`/${el}`}>{el}</option>)
             }
-          </select> */}
-          
+          </select>
+
           <Link key="one" to='/all'>All</Link>
           <Link key="two" to='/europe'>Europe</Link>
           <Link key="three" to='/asia'>Asia</Link>
@@ -74,6 +69,7 @@ function App() {
           <Link key="five" to='/americas'>Americas</Link>
           <Link key="six" to='/oceania'>Oceania</Link>
           <Link key="seven" to='/polar'>Polar</Link>
+
 
 
 
@@ -96,8 +92,8 @@ function App() {
             <Route exact path="/polar" component={withRouter(() => <Countries item="region/polar" />)}></Route>
 
 
-            {/* <Route exact path={`/${region}`} >
-              <Countries item={`/${region}`} />
+            {/* <Route exact path={`/${region}`} component={withRouter(() => <Countries item={`/${region}`} />)}></Route> */}
+            {/* <Countries item={`/${region}`} />
             </Route> */}
           </Switch>
         </div>

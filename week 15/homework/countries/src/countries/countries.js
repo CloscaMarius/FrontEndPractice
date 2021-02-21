@@ -13,7 +13,7 @@ import {withRouter} from 'react-router';
 function Countries({ item }) {
     const [countries, setCountries] = useState([])
     const [region, setRegion] = useState()
-    console.log("1.1:" + item)
+    
 
     useEffect(() => {
         const serverCall = async () => {
