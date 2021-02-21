@@ -16,6 +16,7 @@ import { Menu } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
+import { withRouter } from 'react-router';
 
 const { SubMenu } = Menu;
 
@@ -23,8 +24,9 @@ function App() {
 
   const [countries, setCountries] = useState([])
   const [region, setRegion] = useState('all')
-  const [reference, setReference] = useState()
+
   console.log("1:" + region)
+
   useEffect(() => {
     const serverCall = async () => {
       try {
@@ -39,11 +41,6 @@ function App() {
     serverCall()
   }, [])
 
-  const [current, setCurrent] = useState()
-  const handleClick = e => {
-    console.log('click ', e);
-    setCurrent({ current: e.key });
-  };
 
   const regionChange = (e) => {
 
@@ -52,7 +49,7 @@ function App() {
     console.log("3:" + region)
   }
   console.log("4:" + region)
-  
+
 
   return (
     <div className="App">
@@ -64,17 +61,20 @@ function App() {
 
           {/* <select name="countriesByRegion" onChange={regionChange}>
             <option value='all'>All</option>
-
             {
               Array.from(new Set(countries.map(c => c.region))).map((el, idx) =>
                 <option key={idx} value={`region/${el}`}>{el}</option>)
             }
-
           </select> */}
+          
           <Link key="one" to='/all'>All</Link>
           <Link key="two" to='/europe'>Europe</Link>
           <Link key="three" to='/asia'>Asia</Link>
-          
+          <Link key="four" to='/africa'>Africa</Link>
+          <Link key="five" to='/americas'>Americas</Link>
+          <Link key="six" to='/oceania'>Oceania</Link>
+          <Link key="seven" to='/polar'>Polar</Link>
+
 
 
           <hr />
@@ -87,15 +87,18 @@ function App() {
           of them to render at a time
         */}
           <Switch>
-            <Route path="/all" >
-              <Countries item="all"/>
-            </Route>
-            <Route path="/europe" >
-              <Countries item="region/europe" />
-            </Route>
-            <Route path="/asia" >
-              <Countries item="region/asia" />
-            </Route>
+            <Route exact path="/all" component={withRouter(() => <Countries item="all" />)}></Route>
+            <Route exact path="/europe" component={withRouter(() => <Countries item="region/europe" />)} ></Route>
+            <Route exact path="/asia" component={withRouter(() => <Countries item="region/asia" />)}></Route>
+            <Route exact path="/americas" component={withRouter(() => <Countries item="region/americas" />)}></Route>
+            <Route exact path="/africa" component={withRouter(() => <Countries item="region/africa" />)}></Route>
+            <Route exact path="/oceania" component={withRouter(() => <Countries item="region/oceania" />)}></Route>
+            <Route exact path="/polar" component={withRouter(() => <Countries item="region/polar" />)}></Route>
+
+
+            {/* <Route exact path={`/${region}`} >
+              <Countries item={`/${region}`} />
+            </Route> */}
           </Switch>
         </div>
       </Router>

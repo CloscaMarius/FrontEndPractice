@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import style from './countries.module.scss'
 import { useHistory } from 'react-router-dom'
+import {withRouter} from 'react-router';
 
 function Countries({ item }) {
     const [countries, setCountries] = useState([])
@@ -48,4 +49,4 @@ function Countries({ item }) {
     )
 }
 
-export default Countries;
+export default withRouter(Countries)
