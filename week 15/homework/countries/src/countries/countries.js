@@ -10,11 +10,11 @@ function Countries(props) {
             {
                 props.countries.map((el, idx) =>
                     <div key={idx} className={style.country}>
-                        <img src={el.flag}></img>
-                        <div>{el.name}</div>
-                        <div>Population: {el.population}</div>
-                        <div>Region: {el.region}</div>
-                        <div>Capital: {el.capital}</div>
+                        <img src={el.flag} alt={el.name}></img>
+                        <div className={style.countryName}>{el.name}</div>
+                        <div className={style.countryInfo}>Population: {el.population}</div>
+                        <div className={style.countryInfo}>Region: {el.region}</div>
+                        <div className={style.countryInfo}>Capital: {el.capital}</div>
 
                     </div>)
             }

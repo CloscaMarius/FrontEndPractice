@@ -1,6 +1,4 @@
-var http = require('http');
-
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end('Hello World!');
-}).listen(8080);
+console.log(1)
+setTimeout(function(){console.log(2),1000})
+setTimeout(function(){console.log(3),0})
+console.log(4)

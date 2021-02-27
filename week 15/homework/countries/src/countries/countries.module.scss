@@ -1,13 +1,25 @@
 
 
 .countries {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    place-content: space-evenly;
+    place-content: space-evenly; */
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    justify-items: center;
+    grid-row-gap: 50px;
+}
+
+.country{
+    
 }
 
 .country img{
-    width: 150px;
-    height: 100px;
+    width: 50%;
+    height: 50%;
+}
+
+.countryName{
+
 }
